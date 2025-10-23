@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M0NARQ Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+            overflow: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: linear-gradient(90deg, #1e1e1e, #3e3e3e);
+            animation: fadeIn 2s;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        .engine {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #444;
+            border-radius: 10px;
+            background-color: #222;
+            transition: transform 0.3s;
+        }
+        .engine:hover {
+            transform: scale(1.05);
+            border-color: #00ff00;
+        }
+        .engine img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to M0NARQ</h1>
+        <p>Featuring the two powerful engines: Hawkeye and Hyperion</p>
+    </header>
+    <main>
+        <div class="engine">
+            <img src="hawkeye.png" alt="Hawkeye Engine">
+            <div>
+                <h2>Hawkeye Engine</h2>
+                <p>Experience unparalleled precision and performance.</p>
+            </div>
+        </div>
+        <div class="engine">
+            <img src="hyperion.png" alt="Hyperion Engine">
+            <div>
+                <h2>Hyperion Engine</h2>
+                <p>Unleash the power of advanced technology.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
